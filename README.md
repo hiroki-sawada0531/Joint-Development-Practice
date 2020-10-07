@@ -1,2 +1,2 @@
 ##プロフィールアプリ
-- [Steadfast Collective] （https://steadfastcollective.com/）
+- [Steadfast Collective]（https://steadfastcollective.com/）
