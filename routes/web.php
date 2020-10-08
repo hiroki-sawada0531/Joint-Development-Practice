@@ -21,3 +21,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'ProfileController@index')->name('home');
+Route::get('profile/add', 'ProfileController@add');
+Route::post('profile/add', 'ProfileController@create');
