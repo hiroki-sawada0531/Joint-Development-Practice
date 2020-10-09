@@ -44,3 +44,8 @@
      border: 1px solid pink;
      background-color: rgba(255, 192, 203, 0.26);
 }
+
+.form_input {
+     display: block;
+     margin: 10px auto;
+}
