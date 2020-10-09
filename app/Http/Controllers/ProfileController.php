@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Profile;
 
 class ProfileController extends Controller
 {
@@ -23,6 +24,6 @@ class ProfileController extends Controller
         $form = $request->all();
         unset($form['_token']);
         $profile->fill($form)->save();
-        return redirect('/profile');
+        return redirect('/');
     }
 }

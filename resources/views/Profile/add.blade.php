@@ -12,8 +12,8 @@
           <input class="form_input" type="text" id="name" name="name">
           <label for="age">年齢</label>
           <input class="form_input" type="number" id="age" name="age">
-          <label for="finalEduation">最終学歴</label>
-          <input class="form_input" type="text" id="finalEduation" name="finalEduation">
+          <label for="finalEducation">最終学歴</label>
+          <input class="form_input" type="text" id="finalEducation" name="finalEducation">
           <label for="annualIncome">年収</label>
           <input class="form_input" type="number" id="annualIncome" name="annualIncome">
           <label for="height">身長</label>
