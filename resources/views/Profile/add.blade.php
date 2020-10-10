@@ -8,6 +8,7 @@
      <h1>自分のプロフィールを追加する</h1>
         <form action="/profile/add" method="post">
         @csrf
+          <input class="form_input" type="hidden" id="name" name="userId" value="{{$user->id}}">
           <label for="name">名前</label>
           <input class="form_input" type="text" id="name" name="name">
           <label for="age">年齢</label>
