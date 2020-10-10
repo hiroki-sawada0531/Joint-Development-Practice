@@ -36,4 +36,20 @@ class ProfileController extends Controller
     public function home() {
         return view('profile.home');
     }
+
+    public function edit(Request $request)
+    {
+        $profile = Profile::find($request->id);
+        return view('profile.edit', ['form' => $profile]);
+    }
+
+    public function update(Request $request)
+    {
+        $this->validate($request, Profile::$rules);
+        $profile = Profile::find($request->id);
+        $form = $request->all();
+        unset($form['_token']);
+        $person->fill($form)->save();
+        return redirect('/profile');
+    }
 }

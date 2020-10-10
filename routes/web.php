@@ -26,4 +26,5 @@ Route::post('profile/add', 'ProfileController@create');
 Route::get('profile/', 'ProfileController@home');
 Route::get('/reply/like/{id}', 'RepliesController@like')->name('reply.like');
 Route::get('/reply/unlike/{id}', 'RepliesController@unlike')->name('reply.unlike');
-
+Route::get('profile/edit', 'ProfileController@edit');
+Route::post('profile/edit', 'ProfileController@update');
