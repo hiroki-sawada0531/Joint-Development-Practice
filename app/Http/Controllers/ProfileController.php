@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Profile;
+use Auth;
 
 class ProfileController extends Controller
 {
@@ -14,7 +15,12 @@ class ProfileController extends Controller
 
     public function add(Request $request)
     {
-        return view('profile.add');
+        if(Auth::check()) {
+            $user = Auth::user();
+            return view('profile.add',['user'=> $user]);
+        } else {
+            return redirect('/');
+        }
     }
 
     public function create(Request $request)
@@ -24,7 +30,11 @@ class ProfileController extends Controller
         $form = $request->all();
         unset($form['_token']);
         $profile->fill($form)->save();
-        return redirect('/');
+        return redirect('/profile');
+    }
+
+    public function home() {
+        return view('profile.home');
     }
 
     public function edit(Request $request)
