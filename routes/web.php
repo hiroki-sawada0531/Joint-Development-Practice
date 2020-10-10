@@ -23,5 +23,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'ProfileController@index')->name('home');
 Route::get('profile/add', 'ProfileController@add');
 Route::post('profile/add', 'ProfileController@create');
+Route::get('profile/', 'ProfileController@home');
 Route::get('/reply/like/{id}', 'RepliesController@like')->name('reply.like');
 Route::get('/reply/unlike/{id}', 'RepliesController@unlike')->name('reply.unlike');
+
