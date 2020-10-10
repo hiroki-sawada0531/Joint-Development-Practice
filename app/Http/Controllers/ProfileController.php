@@ -30,6 +30,10 @@ class ProfileController extends Controller
         $form = $request->all();
         unset($form['_token']);
         $profile->fill($form)->save();
-        return redirect('/');
+        return redirect('/profile');
+    }
+
+    public function home() {
+        return view('profile.home');
     }
 }
