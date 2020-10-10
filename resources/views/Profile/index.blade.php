@@ -10,7 +10,6 @@
             <h1 class="main_copy">キャッチコピー２</h1>
             <a href="/login" class="sign in">ログイン</a>
             <a href="/register" class="sign up">今すぐ始める</a>
-            <a href="profile/add">仮add</a>
         </div>
     </div>
 @endsection
