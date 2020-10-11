@@ -10,11 +10,11 @@ class CreateMyProfilesTable extends Migration
     {
         Schema::create('my_profiles', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('userId');//ユーザー情報
-            $table->integer('age');//年齢
+            $table->integer('userId');//ユーザー情報
+            $table->string('age');//年齢
             $table->string('finalEducation');//最終学歴
-            $table->integer('annualIncome');//年収
-            $table->integer('height');//身長
+            $table->string('annualIncome');//年収
+            $table->string('height');//身長
             $table->string('bodyType');//体型
             $table->string('birthPlace');//出身
             $table->string('holiday');//休日
