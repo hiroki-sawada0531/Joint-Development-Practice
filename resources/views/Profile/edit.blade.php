@@ -13,7 +13,7 @@
     <form action="/profile/edit" method="post">
     <table>
         @csrf
-        <input type="hidden" mame="id" value="{{$form->id}}">
+        <input type="hidden" name="id" value="{{$form->id}}">
         <tr>
             <th>name: </th>
             <td><input type="text" name="name" value="{{$form->name}}"></td>
