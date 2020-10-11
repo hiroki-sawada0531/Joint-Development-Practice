@@ -49,7 +49,11 @@ class ProfileController extends Controller
         $profile = Profile::find($request->id);
         $form = $request->all();
         unset($form['_token']);
-        $person->fill($form)->save();
+        echo '<pre>';
+        var_dump($form);
+        echo '</pre>';
+        // exit();
+        $profile->fill($form)->save();
         return redirect('/profile');
     }
 }
