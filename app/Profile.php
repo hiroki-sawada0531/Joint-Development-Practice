@@ -11,8 +11,8 @@ class Profile extends Model
 
     public static $rules = array(
         'name' => 'required',
-        'age' => 'integer|min:1|max:100',
-        'annualIncome' => '|min:0|max:2000',
-        'profession' => 'required'
+        // 'age' => 'integer|min:1|max:100',
+        // 'annualIncome' => '|min:0|max:2000',
+        // 'profession' => 'required'
     );
 }
