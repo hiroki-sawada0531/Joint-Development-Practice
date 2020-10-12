@@ -50,7 +50,7 @@ class ProfileController extends Controller
         $form = $request->all();
         unset($form['_token']);
         echo '<pre>';
-        var_dump($form);
+        var_dump($profile);
         echo '</pre>';
         // exit();
         $profile->fill($form)->save();
