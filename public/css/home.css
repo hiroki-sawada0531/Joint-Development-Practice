@@ -53,3 +53,9 @@ a {
      border-radius: 20px;
      
 }
+
+.user {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+}
