@@ -1,55 +1,54 @@
 .container {
-     width: 50%;
-     margin: 0 auto;
-     text-align: center;
-     border: 1px solid rgba(209, 178, 178, 0.274);
-     box-shadow: 0 0 8px gray;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid rgba(209, 178, 178, 0.274);
+    box-shadow: 0 0 8px gray;
 }
 
 a {
-     text-decoration: none;
+    text-decoration: none;
 }
 
 .header_title {
-     font-size: 30px;
-     margin: 20px 0;
+    font-size: 30px;
+    margin: 20px 0;
 }
 
 .header_top {
-     border-top: 1px solid rgba(209, 178, 178, 0.274);
-     padding: 10px 0;
+    border-top: 1px solid rgba(209, 178, 178, 0.274);
+    padding: 10px 0;
 }
 
 .header_bottom {
-     padding: 10px 0;
-     margin-bottom: 20px; 
-     border-bottom: 1px solid rgba(209, 178, 178, 0.274);
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(209, 178, 178, 0.274);
 }
 
 .header_bottom nav ul {
-     display: flex;
-     text-align: center;
+    display: flex;
+    text-align: center;
 }
 
 .header_bottom nav ul li {
-     width: 50%;
+    width: 50%;
 }
 
 .content {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .item {
-     width: 50%;
-     border-radius: 20px;
-     margin-bottom: 20px;
+    width: 50%;
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
 
 .item img {
-     width: 80%;
-     height: 300px;
-     border-radius: 20px;
-     
+    width: 80%;
+    height: 300px;
+    border-radius: 20px;
 }
