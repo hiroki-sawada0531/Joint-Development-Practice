@@ -20,7 +20,8 @@
                          <nav>
                               <ul>
                                    <li>おすすめ</li>
-                                   <li><a href="/profile/edit">マイページ</a></li>
+                                   <li><a href="/profile/edit?id={{$user->id}}">マイページ</a>
+                                   </li>
                               </ul>
                          </nav>
                     </div>
