@@ -11,6 +11,10 @@
      <div class="container">
           <div class="header">
                <h1 class="header_title">Title</h1>
+               <div class="user">
+                    <p>{{$user->name}}さん</p>
+                    <a href="/logout">ログアウト</a>
+               </div>
                     <div class="header_top">
                          <div class="search">
                               <a href="">条件検索</a>

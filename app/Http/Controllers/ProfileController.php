@@ -8,6 +8,11 @@ use Auth;
 
 class ProfileController extends Controller
 {
+    public function logout() {
+        Auth::logout();
+        return redirect('/');
+    }
+
     public function index(Request $request)
     {
         return view('profile.index');
