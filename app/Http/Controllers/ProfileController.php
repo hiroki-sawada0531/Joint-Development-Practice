@@ -34,7 +34,8 @@ class ProfileController extends Controller
     }
 
     public function home() {
-        return view('profile.home');
+        $user = Auth::user();
+        return view('profile.home',['user'=>$user]);
     }
 
     public function edit(Request $request)
