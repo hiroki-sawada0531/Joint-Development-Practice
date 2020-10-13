@@ -34,3 +34,7 @@ p {
      height: 50px;
      border: 1px solid rgba(209, 178, 178, 0.274);
 }
+
+#name {
+     background-color: rgba(0, 255, 255, 0.144);
+}
