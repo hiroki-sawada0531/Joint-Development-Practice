@@ -49,10 +49,6 @@ class ProfileController extends Controller
         $profile = Profile::find($request->id);
         $form = $request->all();
         unset($form['_token']);
-        echo '<pre>';
-        var_dump($profile);
-        echo '</pre>';
-        // exit();
         $profile->fill($form)->save();
         return redirect('/profile');
     }
