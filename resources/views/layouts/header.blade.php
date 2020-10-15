@@ -17,7 +17,7 @@
      <div class="container">
           <div class="header">
                <div class="header_left">
-                    <p>Title</p>
+                    <a href="/">Soul mate</a>
                </div>
                <div class="header_right">
                     <nav>
