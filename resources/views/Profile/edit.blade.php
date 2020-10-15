@@ -9,6 +9,7 @@
      <div class="form_title">基本プロフィール</div>
         <form action="/profile/edit" method="post">
         @csrf
+          <input class="form_input" type="hidden" name="id" value="{{$form->id}}">
           <input class="form_input" type="hidden" name="userId" value="{{$form->id}}">
           <div class="select_form">
             <p>名前</p>
