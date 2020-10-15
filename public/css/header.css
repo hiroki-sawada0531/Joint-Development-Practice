@@ -1,33 +1,33 @@
 #home {
-     width: 60%;
-     height: 100vh;
-     margin: 0 auto;
+    width: 60%;
+    height: 100vh;
+    margin: 0 auto;
 }
 
 .container {
-     width: 60%;
-     height: 100vh;
-     margin: 0 auto;
+    width: 60%;
+    height: 100vh;
+    margin: 0 auto;
 }
 
 .header {
-     display: flex;
-     justify-content: space-between;
-     height: 50px;
-     margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    margin-top: 20px;
 }
 
 .header_left p {
-     line-height: 50px;
-     font-size: 40px;
+    line-height: 50px;
+    font-size: 40px;
 }
 
 .header_ul {
-     display: flex;
+    display: flex;
 }
 
 .header_link {
-     margin: 0px 30px;
-     line-height: 50px;
-     text-decoration: none;
+    margin: 0px 30px;
+    line-height: 50px;
+    text-decoration: none;
 }

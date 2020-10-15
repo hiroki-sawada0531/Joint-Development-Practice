@@ -1,36 +1,67 @@
+body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans", Meiryo, sans-serif;
+}
+
 .main {
-     width: 80%;
-     margin: 30px auto;
-     box-shadow: 0 0 8px gray;
+    width: 80%;
+    margin: 30px auto;
+    box-shadow: 0 0 8px gray;
 }
 
 .form_title {
-     height: 50px;
-     line-height: 50px;
-     padding: 10px;
-     background-color: rgb(183, 215, 241);
+    height: 50px;
+    line-height: 50px;
+    padding: 10px;
+    background-color: rgb(183, 215, 241);
 }
 
 .select_form {
-     display: flex;
-     justify-content: space-between;
-     height: 50px;
-     padding: 10px;
-     border: 1px solid rgba(209, 178, 178, 0.274);
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding: 10px;
 }
 
 .form_input {
-     border: none;
-     width: 300px;
-     cursor: pointer;
+    position: relative;
+    width: 300px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 1px solid rgba(209, 178, 178, 0.274);
+    padding: 10px;
 }
 
 p {
-     line-height: 50px;
+    line-height: 50px;
 }
 
 .submit {
-     width: 100%;
-     height: 50px;
-     border: 1px solid rgba(209, 178, 178, 0.274);
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgba(209, 178, 178, 0.274);
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 93%;
+    line-height: 1.1em;
+    border-radius: 5px;
+    border: none;
+    background-image: url(../image/icon_arrow.png);
+    background-repeat: no-repeat;
+    background-size: 12px 10px;
+    background-position: right 10px center;
+}
+
+.required::after {
+    content: " *";
+    color: rgb(255, 93, 93);
+    vertical-align: middle;
 }

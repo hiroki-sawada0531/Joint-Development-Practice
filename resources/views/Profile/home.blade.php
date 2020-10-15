@@ -11,6 +11,10 @@
      <div class="container">
           <div class="header">
                <h1 class="header_title">Title</h1>
+               <div class="user">
+                    <p>{{$user->name}}さん</p>
+                    <a href="/logout">ログアウト</a>
+               </div>
                     <div class="header_top">
                          <div class="search">
                               <a href="">条件検索</a>
@@ -20,7 +24,8 @@
                          <nav>
                               <ul>
                                    <li>おすすめ</li>
-                                   <li><a href="">マイページ</a></li>
+                                   <li><a href="/profile/edit?id={{$user->id}}">マイページ</a>
+                                   </li>
                               </ul>
                          </nav>
                     </div>

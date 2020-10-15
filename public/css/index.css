@@ -1,46 +1,46 @@
 .main {
-     width: 60%;
-     height: 50vh;
-     position: absolute;
-     left: 50%;
-     top: 50%;
-     transform: translateY(-50%) translateX(-50%);
-     text-align: center;
+    width: 60%;
+    height: 50vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    text-align: center;
 }
 
 .main_container {
-     width: 100%;
-     position: absolute;
-     left: 50%;
-     top: 50%;
-     transform: translateY(-50%) translateX(-50%);
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
 }
 
-.sub_copy{
-     font-size: 30px;
+.sub_copy {
+    font-size: 30px;
 }
 
-.main_copy{
-     font-size: 60px;
-     margin-bottom: 50px;
+.main_copy {
+    font-size: 60px;
+    margin-bottom: 50px;
 }
 
 .sign {
-     display: block;
-     width: 180px;
-     height: 40px;
-     line-height: 40px;;
-     margin: 20px auto;
-     text-decoration: none;
-     border-radius: 20px;
+    display: block;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    margin: 20px auto;
+    text-decoration: none;
+    border-radius: 20px;
 }
 
 .sign.in {
-     border: 1px solid aqua;
-     background-color: rgba(0, 255, 255, 0.329);
+    border: 1px solid aqua;
+    background-color: rgba(0, 255, 255, 0.329);
 }
 
 .sign.up {
-     border: 1px solid pink;
-     background-color: rgba(255, 192, 203, 0.26);
+    border: 1px solid pink;
+    background-color: rgba(255, 192, 203, 0.26);
 }
