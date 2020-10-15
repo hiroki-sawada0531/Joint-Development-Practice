@@ -13,6 +13,13 @@
           <div class="select_form">
             <p>画像ファイル:</p>
             <input type="file" class="form-input" name="file">
+            @if ($errors->any())
+              <ul>
+                  @foreach($errors->all() as $error)
+                  <li>{{ $error }}</li>
+                  @endforeach
+              </ul>
+            @endif
           </div>
 
           <div class="select_form">

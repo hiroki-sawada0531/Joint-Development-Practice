@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Profile;
 use Auth;
+use App\Image;
 
 class ProfileController extends Controller
 {
@@ -35,6 +36,37 @@ class ProfileController extends Controller
         $form = $request->all();
         unset($form['_token']);
         $profile->fill($form)->save();
+
+        $this->validate($request, [
+            'file' => [
+                // 必須
+                'required',
+                // アップロードされたファイルであること
+                'file',
+                // 画像ファイルであること
+                'image',
+                // MIMEタイプを指定
+                'mimes:jpeg,png',
+            ]
+        ]);
+
+        if ($request->file('file')->isValid([])) {
+            $path = $request->file->store('public');
+
+            $file_name = basename($path);
+            $user_id = Auth::id();
+            $new_image_data = new Image();
+            $new_image_data->user_id = $user_id;
+            $new_image_data->file_name = $file_name;
+
+            $new_image_data->save();
+        } else {
+            return redirect()
+                ->back()
+                ->withInput()
+                ->withErrors();
+        }
+
         return redirect('/profile');
     }
 
