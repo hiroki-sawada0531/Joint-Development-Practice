@@ -4,15 +4,21 @@
 @endpush
 
 @section('content')
-<div class="main">
-  <div class="form_title">基本プロフィール</div>
-  <form action="/profile/add" method="post">
-    @csrf
-    <input class="form_input" type="hidden" name="userId" value="{{$user->id}}">
-    <div class="select_form">
-      <p class="required">名前</p>
-      <input class="form_input" type="text" id="name" name="name" placeholder="山田太郎">
-    </div>
+
+    <div class="main">
+     <div class="form_title">基本プロフィール</div>
+        <form action="/profile/add" method="post" enctype="multipart/form-data">
+        @csrf
+          <input class="form_input" type="hidden" name="userId" value="{{$user->id}}">
+          <div class="select_form">
+            <p>画像ファイル:</p>
+            <input type="file" class="form-input" name="file">
+          </div>
+
+          <div class="select_form">
+            <p>名前</p>
+            <input class="form_input" type="text" id="name" name="name">
+          </div>
 
     <div class="select_form">
       <p>年齢</p>
