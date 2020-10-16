@@ -10,23 +10,20 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
   <!-- Styles -->
   <link rel="stylesheet" href="{{asset('/css/reset.css')}}">
-  <link rel="stylesheet" href="{{asset('/css/header.css')}}">
+  <link rel="stylesheet" href="{{asset('/css/home.css')}}">
   @stack('css')
 </head>
 <body>
      <div class="container">
           <div class="header">
-               <div class="header_left">
+               <div class="user_name">
+                    <p>{{$user->name}}さん</p>
+               </div>
+               <div class="header_logo">
                     <a href="/"><img src="{{asset('/image/SoulMate.png')}}" alt="SoulMate"></a>
                </div>
-               <div class="header_right">
-                    <nav>
-                         <ul class="header_ul">
-                         <li><a class="header_link" href="#">使用方法</a></li>
-                         <li><a class="header_link" href="#">お問い合わせ</a></li>
-                         <li><a class="header_link" href="/login">ログイン</a></li>
-                         </ul>
-                    </nav>
+               <div class="header_body">
+                    <a href="/logout">ログアウト</a>
                </div>
           </div>
           @yield('content')
