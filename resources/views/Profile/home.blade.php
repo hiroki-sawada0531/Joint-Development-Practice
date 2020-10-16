@@ -10,7 +10,7 @@
 <body>
      <div class="container">
           <div class="header">
-               <h1 class="header_title">Title</h1>
+          　　　<a href="/"><img src="{{asset('/image/SoulMate.png')}}" alt="SoulMate"></a>
                <div class="user">
                     <p>{{$user->name}}さん</p>
                     <a href="/logout">ログアウト</a>
