@@ -72,7 +72,8 @@ class ProfileController extends Controller
 
     public function home() {
         $user = Auth::user();
-        return view('profile.home',['user'=>$user]);
+        $images = Image::all();
+        return view('profile.home',['user'=>$user,'images'=>$images]);
     }
 
     public function edit(Request $request)

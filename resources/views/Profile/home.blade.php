@@ -31,22 +31,11 @@
                     </div>
           </div>
           <div class="content">
+          @foreach($images as $image)
                <div class="item">
-                    <img src="{{asset('/image/girl.jpg')}}" alt="">
-                    <p>Name:</p>
+                    <img src="{{asset('storage/' . $image->file_name) }}">
                </div>
-               <div class="item">
-                    <img src="{{asset('/image/girl.jpg')}}" alt="">
-                    <p>Name:</p>
-               </div>
-               <div class="item">
-                    <img src="{{asset('/image/girl.jpg')}}" alt="">
-                    <p>Name:</p>
-               </div>
-               <div class="item">
-                    <img src="{{asset('/image/girl.jpg')}}" alt="">
-                    <p>Name:</p>
-               </div>
+          @endforeach
           </div>
     </div>
 </body>
