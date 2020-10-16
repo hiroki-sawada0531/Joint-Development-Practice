@@ -17,7 +17,7 @@
      <div class="container">
           <div class="header">
                <div class="header_left">
-                    <a href="/">SoulMate</a>
+                    <a href="/"><img src="SoulMate.png"></a>
                </div>
                <div class="header_right">
                     <nav>
