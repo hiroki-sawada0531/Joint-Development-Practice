@@ -17,7 +17,7 @@
      <div class="container">
           <div class="header">
                <div class="header_left">
-                    <a href="/">SoulMate</a>
+                    <a href="/"><img src="{{asset('/image/SoulMate.png')}}" alt="SoulMate"></a>
                </div>
                <div class="header_right">
                     <nav>
@@ -31,6 +31,6 @@
           </div>
           @yield('content')
      </div>
-  <script src="{{asset('/js/auth.js')}}"></script>
+  <!-- <script src="{{asset('/js/auth.js')}}"></script> //auth.jsがないよ -->
 </body>
 </html>
