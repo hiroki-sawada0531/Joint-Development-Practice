@@ -95,6 +95,8 @@ class ProfileController extends Controller
 
     public function show(Request $request) {
         $form = Profile::find($request->id);
-        return view('profile.show',['form' => $form]);
+        $images = Image::where('user_id',$request->id)->first();
+        $user = Auth::user();
+        return view('profile.show',['form' => $form, 'user' => $user,'images'=>$images]);
     }
 }
