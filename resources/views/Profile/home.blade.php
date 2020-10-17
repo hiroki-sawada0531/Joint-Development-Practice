@@ -7,7 +7,7 @@
 <div class="header_bottom">
      <nav>
           <ul>
-               <li><a href="">条件検索</a></li>
+               <li><a href="/profile/search">条件検索</a></li>
                <li><a href="/profile/edit?id={{$user->id}}">マイページ</a></li>
           </ul>
      </nav>

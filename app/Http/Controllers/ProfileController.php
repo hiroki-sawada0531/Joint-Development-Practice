@@ -99,4 +99,9 @@ class ProfileController extends Controller
         $user = Auth::user();
         return view('profile.show',['form' => $form, 'user' => $user,'images'=>$images]);
     }
+
+    public function search(Request $request) {
+        $user = Auth::user();
+        return view('profile.search',['user' => $user]);
+    }
 }
