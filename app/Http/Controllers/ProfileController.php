@@ -73,7 +73,8 @@ class ProfileController extends Controller
     public function home() {
         $user = Auth::user();
         $images = Image::all();
-        return view('profile.home',['user'=>$user,'images'=>$images]);
+        $profile = Profile::all();
+        return view('profile.home',['user'=>$user,'images'=>$images,'profile' => $profile]);
     }
 
     public function edit(Request $request)
@@ -90,5 +91,10 @@ class ProfileController extends Controller
         unset($form['_token']);
         $profile->fill($form)->save();
         return redirect('/profile');
+    }
+
+    public function show(Request $request) {
+        $form = Profile::find($request->id);
+        return view('profile.show',['form' => $form]);
     }
 }

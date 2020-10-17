@@ -29,3 +29,4 @@ Route::get('/reply/like/{id}', 'RepliesController@like')->name('reply.like');
 Route::get('/reply/unlike/{id}', 'RepliesController@unlike')->name('reply.unlike');
 Route::get('profile/edit', 'ProfileController@edit');
 Route::post('profile/edit', 'ProfileController@update');
+Route::get('profile/show', 'ProfileController@show');
