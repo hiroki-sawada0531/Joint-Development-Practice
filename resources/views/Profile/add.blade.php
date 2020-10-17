@@ -5,27 +5,27 @@
 
 @section('content')
 
-    <div class="main">
-     <div class="form_title">基本プロフィール</div>
-        <form action="/profile/add" method="post" enctype="multipart/form-data">
-        @csrf
-          <input class="form_input" type="hidden" name="userId" value="{{$user->id}}">
-          <div class="select_form">
-            <p>画像ファイル:</p>
-            <input type="file" class="form-input" name="file">
-            @if ($errors->any())
-              <ul>
-                  @foreach($errors->all() as $error)
-                  <li>{{ $error }}</li>
-                  @endforeach
-              </ul>
-            @endif
-          </div>
+<div class="main">
+  <div class="form_title">基本プロフィール</div>
+  <form action="/profile/add" method="post" enctype="multipart/form-data">
+    @csrf
+    <input class="form_input" type="hidden" name="userId" value="{{$user->id}}">
+    <div class="select_form">
+      <p>画像ファイル:</p>
+      <input type="file" class="form-input" name="file">
+      @if ($errors->any())
+      <ul>
+        @foreach($errors->all() as $error)
+        <li>{{ $error }}</li>
+        @endforeach
+      </ul>
+      @endif
+    </div>
 
-          <div class="select_form">
-            <p>名前</p>
-            <input class="form_input" type="text" id="name" name="name">
-          </div>
+    <div class="select_form">
+      <p>名前</p>
+      <input class="form_input" type="text" id="name" name="name">
+    </div>
 
     <div class="select_form">
       <p>年齢</p>
