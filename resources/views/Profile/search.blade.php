@@ -5,6 +5,7 @@
 
 @section('content')
 <div class="main">
+  <div class="form_title">検索条件の設定</div>
   <form action="/profile/search" method="post" enctype="multipart/form-data">
     @csrf
 
