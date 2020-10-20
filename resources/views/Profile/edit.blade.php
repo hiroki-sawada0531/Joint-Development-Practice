@@ -1,4 +1,4 @@
-@extends('layouts.header')
+@extends('layouts.home')
 
 @push('css')
 <link rel="stylesheet" href="{{asset('/css/add.css')}}">
