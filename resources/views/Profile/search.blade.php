@@ -1,6 +1,6 @@
 @extends('layouts.home')
 @push('css')
-<link rel="stylesheet" href="{{asset('/css/index.css')}}">
+<link rel="stylesheet" href="{{asset('/css/add.css')}}">
 @endpush
 
 @section('content')

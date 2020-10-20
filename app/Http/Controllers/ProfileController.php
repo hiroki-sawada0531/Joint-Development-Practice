@@ -106,7 +106,16 @@ class ProfileController extends Controller
     }
 
     public function find(Request $request) {
-        $result = Profile::where('age', $request->age)->where('finalEducation',$request->finalEducation)->where('annualIncome',$request->annualIncome)->where('height',$request->height)->where('bodyType',$request->bodyType)->where('birthPlace',$request->birthPlace)->where('holiday',$request->holiday)->where('bloodType',$request->bloodType)->where('profession',$request->profession)->first();
+        $result = Profile::where('age', $request->age)
+        ->where('finalEducation',$request->finalEducation)
+        ->where('annualIncome',$request->annualIncome)
+        ->where('height',$request->height)
+        ->where('bodyType',$request->bodyType)
+        ->where('birthPlace',$request->birthPlace)
+        ->where('holiday',$request->holiday)
+        ->where('bloodType',$request->bloodType)
+        ->where('profession',$request->profession)
+        ->first();
         return view('profile.result',['result' => $result]);
     }
 }
