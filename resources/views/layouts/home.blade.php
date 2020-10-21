@@ -20,7 +20,7 @@
                     <p>{{$user->name}}さん</p>
                </div>
                <div class="header_logo">
-                    <a href="/"><img src="{{asset('/image/SoulMate.png')}}" alt="SoulMate"></a>
+                    <a href="/profile"><img src="{{asset('/image/SoulMate.png')}}" alt="SoulMate"></a>
                </div>
                <div class="header_body">
                     <a href="/logout">ログアウト</a>
