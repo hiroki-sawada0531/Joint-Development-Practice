@@ -71,10 +71,15 @@ class ProfileController extends Controller
     }
 
     public function home() {
-        $user = Auth::user();
-        $images = Image::all();
-        $profile = Profile::all();
-        return view('profile.home',['user'=>$user,'images'=>$images,'profile' => $profile]);
+        if(Auth::check()) {
+            $user = Auth::user();
+            $images = Image::all();
+            $profile = Profile::all();
+            return view('profile.home',['user'=>$user,'images'=>$images,'profile' => $profile]);
+        } else {
+            return redirect('/');
+        }
+        
     }
 
     public function edit(Request $request)
