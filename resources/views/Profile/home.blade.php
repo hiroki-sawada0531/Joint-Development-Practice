@@ -14,7 +14,7 @@
 </div>
 
 <div class="content">
-     @foreach($images as $image)
+     @foreach($images->shuffle() as $image)
      <div class="item">
           <a href="/profile/show?id={{$image->user_id}}"><img src="{{asset('storage/' . $image->file_name) }}"></a>
           <p>{{$profile->find($image->user_id)->name}}</p>
