@@ -11,6 +11,7 @@
   <!-- Styles -->
   <link rel="stylesheet" href="{{asset('/css/reset.css')}}">
   <link rel="stylesheet" href="{{asset('/css/header.css')}}">
+  <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   @stack('css')
 </head>
 <body>
