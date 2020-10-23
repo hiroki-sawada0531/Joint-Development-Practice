@@ -13,6 +13,8 @@
           <div class="engage_content">
                <p class="lavel">年齢</p>
                <p class="answer">{{$form->age}}</p>
+               <p class="lavel">性別</p>
+               <p class="answer">{{$form->sex}}</p>
                <p class="lavel">最終学歴</p>
                <p class="answer">{{$form->finalEducation}}</p>
                <p class="lavel">年収</p>

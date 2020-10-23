@@ -10,6 +10,8 @@ class CreateMyProfilesTable extends Migration
     {
         Schema::create('my_profiles', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->string('sex');//性別
             $table->integer('userId');//ユーザー情報
             $table->string('age');//年齢
             $table->string('finalEducation');//最終学歴
