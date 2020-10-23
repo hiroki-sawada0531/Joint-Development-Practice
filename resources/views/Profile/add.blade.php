@@ -38,6 +38,15 @@
     </div>
 
     <div class="select_form">
+      <p>性別</p>
+      <select class="form_input" name="sex">
+        <option class="input_gray">未設定</option>
+        <option>男</option>
+        <option>女</option>
+      </select>
+    </div>
+
+    <div class="select_form">
       <p>最終学歴</p>
       <select class="form_input" name="finalEducation">
         <option>未設定</option>
@@ -87,7 +96,7 @@
     <div class="select_form">
       <p class="required">出身</p>
       <select class="form_input" name="birthPlace">
-        <option value="">選択してください</option>
+        <option>選択してください</option>
         <option>北海道</option>
         <option>青森県</option>
         <option>岩手県</option>
