@@ -30,7 +30,7 @@
                <p class="lavel">血液型</p>
                <p class="answer">{{$form->bloodType}}</p>
                <p class="lavel">職業</p>
-               <p class="answer">{{$form->profession}}</p>
+               <p class="last answer">{{$form->profession}}</p>
           </div>
      </div>
      <div class="footer">
