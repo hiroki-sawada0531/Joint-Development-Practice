@@ -16,7 +16,7 @@ class ProfileController extends Controller
 
     public function index(Request $request)
     {
-        return view('profile.index');
+        return view('Profile.index');
     }
 
     public function add(Request $request)
