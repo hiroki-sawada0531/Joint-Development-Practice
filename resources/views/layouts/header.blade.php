@@ -23,7 +23,7 @@
                <div class="header_right">
                     <nav>
                          <ul class="header_ul">
-                         <li><a class="header_link" href="#">使用方法</a></li>
+                         <li><a class="header_link" href="/how_to">使用方法</a></li>
                          <li><a class="header_link" href="#">お問い合わせ</a></li>
                          <li><a class="header_link" href="/login">ログイン</a></li>
                          </ul>

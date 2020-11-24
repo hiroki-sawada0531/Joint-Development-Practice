@@ -9,6 +9,10 @@ use App\Image;
 
 class ProfileController extends Controller
 {
+    public function how() {
+        return view('profile.how');
+    }
+
     public function logout() {
         Auth::logout();
         return redirect('/');
