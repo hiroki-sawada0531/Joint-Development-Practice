@@ -1,10 +1,5 @@
 <?php
 
-if(config('app.env') === 'production'){
-    // asset()やurl()がhttpsで生成される
-    URL::forceScheme('https');
-}
-
 use Illuminate\Support\Facades\Route;
 // use App\Http\Controllers\PlofileController;
 /*
